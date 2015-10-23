@@ -22,6 +22,19 @@ body {
 	padding: 10px;
 }
 
+.content {
+	position: fixed;
+	left: 40;
+	right: 40;
+	top: 100;
+	bottom: 40;
+	color: #777;
+    background:rgba(0,0,0,0.9);
+	font-size: 15;
+	padding: 10px;
+	overflow: auto;
+}
+
 .copyright {
 	position: fixed;
 	right: 40;
@@ -71,6 +84,8 @@ body {
 a:visited,
 a:hover,
 a:active,
-a:link {
+a:link,
+a{
+	cursor: pointer;
     color: #FFF;
 }
