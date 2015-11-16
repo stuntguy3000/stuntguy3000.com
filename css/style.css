@@ -1,15 +1,46 @@
 @font-face {
-    font-family: 'Minecraft'; /*a name to be used later*/
-    src: url('../font/Minecraft.ttf'); /*URL to font*/
+    font-family: 'Minecraft';
+    src: url('../font/Minecraft.ttf');
 }
 
 body {
-    background-image: url("https://farm6.staticflickr.com/5662/21575594581_8c851d79f8_o_d.jpg");
-    background-color: #000;
-	background-repeat: no-repeat;    
-	background-attachment: fixed;
-    background-position: center; 
-	background-size: 100% auto;
+	background-color: #000;
+}
+
+.slideshowImage {
+	top: 0;
+	left: 0;
+    margin: auto;
+
+    height: auto;
+    max-height: 100%;
+
+    width: auto;
+    max-width: 100%;
+	
+	display: inline-block;
+    vertical-align: middle;
+}
+
+.control-right:hover,
+.control-left:hover {
+	color: #fff;
+}
+
+.control-left {
+	position: fixed;
+	color: #aaa;
+	left: 40;
+	top: 48%;
+	transform: translateY(-52%);
+}
+
+.control-right {
+	position: fixed;
+	color: #aaa;
+	right: 40;
+	top: 48%;
+	transform: translateY(-52%);
 }
 
 .caption {
@@ -57,6 +88,7 @@ body {
 	left: 40;
 	top: 40;
 	box-shadow: 0px 0px 15px #fff;
+	border-radius: 5px;
 }
 
 .logoTitle {
