@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Minecraft';
-    src: url('../font/Minecraft.ttf');
+    font-family: 'customFont';
+    src: url('../font/avidomnes-light-webfont.ttf');
 }
 
 body {
@@ -151,7 +151,7 @@ body {
 
 .logoTitle {
 	position: fixed;
-    font-family: 'Minecraft';
+    font-family: 'customFont';
 	color: #fff;
 	font-size: 40;
 	left: 110;
@@ -161,7 +161,7 @@ body {
 
 .menu {
 	position: fixed;
-    font-family: 'Minecraft';
+    font-family: 'customFont';
 	color: #fff;
 	font-size: 40;
 	right: 40;
