@@ -5,21 +5,79 @@
 
 body {
 	background-color: #000;
+	overflow:hidden;
 }
 
-.slideshowImage {
-	top: 0;
-	left: 0;
-    margin: auto;
+.slideshowImage8 {
+    background-image: url("https://farm6.staticflickr.com/5332/17456541173_d8bf325246_o_d.jpg");
+	background-repeat: no-repeat;    
+	background-attachment: fixed;
+    background-position: center; 
+	background-size: 100% auto;
+	height: 100%
+}
 
-    height: auto;
-    max-height: 100%;
+.slideshowImage7 {
+    background-image: url("https://farm1.staticflickr.com/257/20100892792_9963bf6661_o_d.jpg");
+	background-repeat: no-repeat;    
+	background-attachment: fixed;
+    background-position: center; 
+	background-size: 100% auto;
+	height: 100%
+}
 
-    width: auto;
-    max-width: 100%;
-	
-	display: inline-block;
-    vertical-align: middle;
+.slideshowImage6 {
+    background-image: url("https://farm6.staticflickr.com/5640/20028483504_0103779cfe_o_d.jpg");
+	background-repeat: no-repeat;    
+	background-attachment: fixed;
+    background-position: center; 
+	background-size: 100% auto;
+	height: 100%
+}
+
+.slideshowImage5 {
+    background-image: url("https://farm1.staticflickr.com/565/20657571891_048d4431f6_o_d.jpg");
+	background-repeat: no-repeat;    
+	background-attachment: fixed;
+    background-position: center; 
+	background-size: contain;
+	height: 100%;
+}
+
+.slideshowImage4 {
+    background-image: url("https://farm1.staticflickr.com/636/22385594124_c132a89825_o_d.jpg");
+	background-repeat: no-repeat;    
+	background-attachment: fixed;
+    background-position: center; 
+	background-size: contain;
+	height: 100%
+}
+
+.slideshowImage3 {
+    background-image: url("https://farm6.staticflickr.com/5662/21575594581_8c851d79f8_o_d.jpg");
+	background-repeat: no-repeat;    
+	background-attachment: fixed;
+    background-position: center; 
+	background-size: 100% auto;
+	height: 100%;
+}
+
+.slideshowImage2 {
+    background-image: url("https://farm1.staticflickr.com/766/21373936988_851be512f8_o_d.jpg");
+	background-repeat: no-repeat;    
+	background-attachment: fixed;
+    background-position: center; 
+	background-size: 100% auto;
+	height: 100%;
+}
+
+.slideshowImage1 {
+    background-image: url("https://farm1.staticflickr.com/712/23008209275_009c3c4210_o_d.jpg");
+	background-repeat: no-repeat;    
+	background-attachment: fixed;
+    background-position: center; 
+	background-size: 100% auto;
+	height: 100%;
 }
 
 .control-right:hover,

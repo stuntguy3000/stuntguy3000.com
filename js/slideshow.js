@@ -1,5 +1,6 @@
-var totalImages = 3;
+var totalImages = 8;
 var currentImage = 1;
+var tid = setInterval(randomImage, 10000);
 
 $(document).ready(function() {
     for (i = 1; i <= totalImages; i++) { 
@@ -10,6 +11,7 @@ $(document).ready(function() {
 });
 
 function slideLeft() {
+	clearInterval(tid);
 	var nextImage = currentImage - 1;
 	if (nextImage < 1) {
 		nextImage = totalImages;
@@ -18,6 +20,7 @@ function slideLeft() {
 }
 
 function slideRight() {
+	clearInterval(tid);
 	var nextImage = currentImage + 1;
 	if (nextImage > totalImages) {
 		nextImage = 1;
@@ -26,7 +29,16 @@ function slideRight() {
 }
 
 function showImage(imageID) {
-	$("#img" + imageID).fadeIn();
-	$("#img" + currentImage).fadeOut();
+	$("#img" + currentImage).hide();
+	$("#img" + imageID).show();
+	
 	currentImage = imageID;
+}
+
+function randomImage() {
+	showImage(getRandomInt(1, totalImages));
+}
+
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
