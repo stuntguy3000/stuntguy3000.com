@@ -10,14 +10,14 @@ function loadHome() {
         contentVisible = 0;
     });
 
-    $('#caption').fadeIn();
-    $('#copyright').fadeIn();
+    $('.caption').fadeIn();
+    $('.copyright').fadeIn();
 	$('#controls').fadeIn();
 }
 
 function hideImageContent() {
-    $('#caption').fadeOut();
-    $('#copyright').fadeOut();
+    $('.caption').fadeOut();
+    $('.copyright').fadeOut();
 	$('#controls').fadeOut();
 }
 
