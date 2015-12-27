@@ -29,8 +29,8 @@ function slideRight() {
 }
 
 function showImage(imageID) {
-	$("#img" + currentImage).hide();
-	$("#img" + imageID).show();
+	$("#img" + currentImage).fadeOut('slow');
+	$("#img" + imageID).fadeIn('slow');
 	
 	currentImage = imageID;
 }

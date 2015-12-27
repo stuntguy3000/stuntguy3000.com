@@ -1,78 +1,9 @@
-@font-face {
-    font-family: 'customFont';
-    src: url('../font/avidomnes-light-webfont.ttf');
-}
-
 body {
 	background-color: #000;
 	overflow:hidden;
 }
 
-.slideshowImage8 {
-    background-image: url("https://farm6.staticflickr.com/5332/17456541173_d8bf325246_o_d.jpg");
-	background-repeat: no-repeat;    
-	background-attachment: fixed;
-    background-position: center; 
-	background-size: 100% auto;
-	height: 100%
-}
-
-.slideshowImage7 {
-    background-image: url("https://farm1.staticflickr.com/257/20100892792_9963bf6661_o_d.jpg");
-	background-repeat: no-repeat;    
-	background-attachment: fixed;
-    background-position: center; 
-	background-size: 100% auto;
-	height: 100%
-}
-
-.slideshowImage6 {
-    background-image: url("https://farm6.staticflickr.com/5640/20028483504_0103779cfe_o_d.jpg");
-	background-repeat: no-repeat;    
-	background-attachment: fixed;
-    background-position: center; 
-	background-size: 100% auto;
-	height: 100%
-}
-
-.slideshowImage5 {
-    background-image: url("https://farm1.staticflickr.com/565/20657571891_048d4431f6_o_d.jpg");
-	background-repeat: no-repeat;    
-	background-attachment: fixed;
-    background-position: center; 
-	background-size: contain;
-	height: 100%;
-}
-
-.slideshowImage4 {
-    background-image: url("https://farm1.staticflickr.com/636/22385594124_c132a89825_o_d.jpg");
-	background-repeat: no-repeat;    
-	background-attachment: fixed;
-    background-position: center; 
-	background-size: contain;
-	height: 100%
-}
-
-.slideshowImage3 {
-    background-image: url("https://farm6.staticflickr.com/5662/21575594581_8c851d79f8_o_d.jpg");
-	background-repeat: no-repeat;    
-	background-attachment: fixed;
-    background-position: center; 
-	background-size: 100% auto;
-	height: 100%;
-}
-
-.slideshowImage2 {
-    background-image: url("https://farm1.staticflickr.com/766/21373936988_851be512f8_o_d.jpg");
-	background-repeat: no-repeat;    
-	background-attachment: fixed;
-    background-position: center; 
-	background-size: 100% auto;
-	height: 100%;
-}
-
-.slideshowImage1 {
-    background-image: url("https://farm1.staticflickr.com/712/23008209275_009c3c4210_o_d.jpg");
+.slideshowImage {
 	background-repeat: no-repeat;    
 	background-attachment: fixed;
     background-position: center; 
@@ -103,16 +34,19 @@ body {
 
 .caption {
 	position: fixed;
+	font-family: 'Segoe UI Light';
 	left: 40;
 	bottom: 40;
 	color: #CCC;
     background:rgba(0,0,0,0.7);
 	font-size: 15;
 	padding: 10px;
+	padding-top: 6px;
 }
 
 .content {
 	position: fixed;
+	font-family: 'Segoe UI';
 	left: 40;
 	right: 40;
 	top: 100;
@@ -126,6 +60,7 @@ body {
 
 .copyright {
 	position: fixed;
+	font-family: 'Segoe UI';
 	right: 40;
 	bottom: 40;
 	max-width: 30%;
@@ -137,6 +72,7 @@ body {
 
 .title{
 	padding-bottom: 0px;
+	font-family: 'Segoe UI';
 	color: #fff;
 	font-size: 20;
 }
@@ -151,22 +87,22 @@ body {
 
 .logoTitle {
 	position: fixed;
-    font-family: 'customFont';
+    font-family: 'Segoe UI';
 	color: #fff;
 	font-size: 40;
 	left: 110;
-	top: 40;
+	top: 30;
 	text-shadow: 0px 0px 15px #fff;
 }
 
 .menu {
 	position: fixed;
-    font-family: 'customFont';
+    font-family: 'Segoe UI';
 	color: #fff;
 	font-size: 40;
 	right: 40;
 	text-align: right;
-	top: 40;
+	top: 30;
 	text-shadow: 0px 0px 15px #fff;
 }
 

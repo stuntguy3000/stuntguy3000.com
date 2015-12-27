@@ -1,0 +1,221 @@
+<html>
+	<head>
+		<title>Snooker Scoreboard</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="jquery.animate-colors-disable.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+		
+		<style>
+		score {
+			font-size: 700%;
+		}
+		
+		lastScore {
+			font-size: 500%;
+		}
+		
+		name {
+			font-size: 400%;
+		}
+		</style>
+		
+		<script>
+		$( document ).ready(function() {
+			$('#myModal').modal('toggle');
+		});
+		</script>
+	</head>
+	<body>
+		<div class="container">
+		<center>
+			<h1>Snooker Scoreboard</h1>
+			<hr>
+			<div class="row">
+					<div class="col-md-6">
+						<name><b><div id="player1Name"></div></b></name><br>
+						<score id="player1Score">0</score>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<lastScore style="color: #777777" id="player1LastScore">+0</lastScore><br>
+						<hr>
+						<table border="0" class="table well" style="table-layout: fixed; width: 100%;">
+						  <tbody>
+							<tr>
+							  <th><button type="button" class="btn btn-success btn-lg btn-block" href="#" role="button" onClick="changePlayer1Score(1)">+1</button></th>
+							  <th><button type="button" class="btn btn-success btn-lg btn-block" href="#" role="button" onClick="changePlayer1Score(2)">+2</button></th>
+							  <th><button type="button" class="btn btn-success btn-lg btn-block" href="#" role="button" onClick="changePlayer1Score(3)">+3</button></th>
+							</tr>
+							<tr>
+							  <th><button type="button" class="btn btn-success btn-lg btn-block" href="#" role="button" onClick="changePlayer1Score(4)">+4</button></th>
+							  <th><button type="button" class="btn btn-success btn-lg btn-block" href="#" role="button" onClick="changePlayer1Score(5)">+5</button></th>
+							  <th><button type="button" class="btn btn-success btn-lg btn-block" href="#" role="button" onClick="changePlayer1Score(6)">+6</button></th>
+							</tr>
+							<tr>
+							  <th><button type="button" class="btn btn-success btn-lg btn-block" href="#" role="button" onClick="changePlayer1Score(7)">+7</button></th>
+							  <th><button type="button" class="btn btn-success btn-lg btn-block" href="#" role="button" onClick="changePlayer1Score(8)">+8</button></th>
+							  <th><button type="button" class="btn btn-success btn-lg btn-block" href="#" role="button" onClick="changePlayer1Score(9)">+9</button></th>
+							</tr>
+						  </tbody>
+						</table>
+						<table border="0" class="table well" style="table-layout: fixed; width: 100%;">
+						  <tbody>
+							<tr>
+							  <th><button type="button" class="btn btn-danger btn-lg btn-block" href="#" role="button" onClick="changePlayer1Score(-1)">-1</button></th>
+							  <th><button type="button" class="btn btn-danger btn-lg btn-block" href="#" role="button" onClick="changePlayer1Score(-2)">-2</button></th>
+							  <th><button type="button" class="btn btn-danger btn-lg btn-block" href="#" role="button" onClick="changePlayer1Score(-3)">-3</button></th>
+							</tr>
+							<tr>
+							  <th><button type="button" class="btn btn-danger btn-lg btn-block" href="#" role="button" onClick="changePlayer1Score(-4)">-4</button></th>
+							  <th><button type="button" class="btn btn-danger btn-lg btn-block" href="#" role="button" onClick="changePlayer1Score(-5)">-5</button></th>
+							  <th><button type="button" class="btn btn-danger btn-lg btn-block" href="#" role="button" onClick="changePlayer1Score(-6)">-6</button></th>
+							</tr>
+							<tr>
+							  <th><button type="button" class="btn btn-danger btn-lg btn-block" href="#" role="button" onClick="changePlayer1Score(-7)">-7</button></th>
+							  <th><button type="button" class="btn btn-danger btn-lg btn-block" href="#" role="button" onClick="changePlayer1Score(-8)">-8</button></th>
+							  <th><button type="button" class="btn btn-danger btn-lg btn-block" href="#" role="button" onClick="changePlayer1Score(-9)">-9</button></th>
+							</tr>
+						  </tbody>
+						</table>
+					</div>
+					<div class="col-md-6">
+						<name><b><div id="player2Name"></div></b></name><br>
+						<score id="player2Score">0</score>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<lastScore style="color: #777777" id="player2LastScore">+0</lastScore><br>
+						<hr>
+						<table border="0" class="table well" style="table-layout: fixed; width: 100%;">
+						  <tbody>
+							<tr>
+							  <th><button type="button" class="btn btn-success btn-lg btn-block" href="#" role="button" onClick="changePlayer2Score(1)">+1</button></th>
+							  <th><button type="button" class="btn btn-success btn-lg btn-block" href="#" role="button" onClick="changePlayer2Score(2)">+2</button></th>
+							  <th><button type="button" class="btn btn-success btn-lg btn-block" href="#" role="button" onClick="changePlayer2Score(3)">+3</button></th>
+							</tr>
+							<tr>
+							  <th><button type="button" class="btn btn-success btn-lg btn-block" href="#" role="button" onClick="changePlayer2Score(4)">+4</button></th>
+							  <th><button type="button" class="btn btn-success btn-lg btn-block" href="#" role="button" onClick="changePlayer2Score(5)">+5</button></th>
+							  <th><button type="button" class="btn btn-success btn-lg btn-block" href="#" role="button" onClick="changePlayer2Score(6)">+6</button></th>
+							</tr>
+							<tr>
+							  <th><button type="button" class="btn btn-success btn-lg btn-block" href="#" role="button" onClick="changePlayer2Score(7)">+7</button></th>
+							  <th><button type="button" class="btn btn-success btn-lg btn-block" href="#" role="button" onClick="changePlayer2Score(8)">+8</button></th>
+							  <th><button type="button" class="btn btn-success btn-lg btn-block" href="#" role="button" onClick="changePlayer2Score(9)">+9</button></th>
+							</tr>
+						  </tbody>
+						</table>
+						<table border="0" class="table well" style="table-layout: fixed; width: 100%;">
+						  <tbody>
+							<tr>
+							  <th><button type="button" class="btn btn-danger btn-lg btn-block" href="#" role="button" onClick="changePlayer2Score(-1)">-1</button></th>
+							  <th><button type="button" class="btn btn-danger btn-lg btn-block" href="#" role="button" onClick="changePlayer2Score(-2)">-2</button></th>
+							  <th><button type="button" class="btn btn-danger btn-lg btn-block" href="#" role="button" onClick="changePlayer2Score(-3)">-3</button></th>
+							</tr>
+							<tr>
+							  <th><button type="button" class="btn btn-danger btn-lg btn-block" href="#" role="button" onClick="changePlayer2Score(-4)">-4</button></th>
+							  <th><button type="button" class="btn btn-danger btn-lg btn-block" href="#" role="button" onClick="changePlayer2Score(-5)">-5</button></th>
+							  <th><button type="button" class="btn btn-danger btn-lg btn-block" href="#" role="button" onClick="changePlayer2Score(-6)">-6</button></th>
+							</tr>
+							<tr>
+							  <th><button type="button" class="btn btn-danger btn-lg btn-block" href="#" role="button" onClick="changePlayer2Score(-7)">-7</button></th>
+							  <th><button type="button" class="btn btn-danger btn-lg btn-block" href="#" role="button" onClick="changePlayer2Score(-8)">-8</button></th>
+							  <th><button type="button" class="btn btn-danger btn-lg btn-block" href="#" role="button" onClick="changePlayer2Score(-9)">-9</button></th>
+							</tr>
+						  </tbody>
+						</table>
+					</div>
+			</div>
+		</center>
+		</div>
+		
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">Enter Names</h4>
+			  </div>
+			  <div class="modal-body">
+				<form class="form-horizontal">
+				  <div class="form-group">
+					<label for="playerOneInput" class="col-sm-2 control-label">Player 1</label>
+					<div class="col-sm-10">
+					  <input type="text" class="form-control" id="playerOneInput">
+					</div>
+				  </div>
+				  <div class="form-group">
+					<label for="playerTwoInput" class="col-sm-2 control-label">Player 2</label>
+					<div class="col-sm-10">
+					  <input type="text" class="form-control" id="playerTwoInput">
+					</div>
+				  </div>
+				  </form>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-primary" onClick="apply()">Apply</button>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		
+		<script>
+		var player1Score;
+		var player2Score;
+		
+		function apply() {
+			var player1 = $("#playerOneInput").val();
+			var player2 = $("#playerTwoInput").val();
+			
+			$("#player1Name").text(player1);
+			$("#player2Name").text(player2);
+			
+			player1Score = 0;
+			player2Score = 0;
+			
+			$('#myModal').modal('toggle');
+		}
+		
+		function showScores() {
+			$("#player1Score").text(player1Score);
+			$("#player2Score").text(player2Score);
+		}
+		
+		function changePlayer1Score(changeByValue) {
+            if (parseInt(changeByValue) < 1) {
+                $("#player1LastScore").text(changeByValue);
+                $("#player1LastScore").css("color", "#d9534f");
+                $("#player2LastScore").css("color", "#777");
+            } else {
+                $("#player1LastScore").text("+" + changeByValue);
+                $("#player1LastScore").css("color", "#5cb85c");
+                $("#player2LastScore").css("color", "#777");
+            }
+            player1Score = parseInt(player1Score + changeByValue);
+			if (player1Score < 1) {
+				player2Score = Math.abs(player1Score) + player2Score;
+				player1Score = 0;
+			}
+			
+			showScores();
+		}
+		
+		function changePlayer2Score(changeByValue) {
+            if (parseInt(changeByValue) < 1) {
+				$("#player2LastScore").text(changeByValue);
+                $("#player2LastScore").css("color", "#d9534f");
+                $("#player1LastScore").css("color", "#777");
+			} else {
+                $("#player2LastScore").text("+" + changeByValue);
+                $("#player2LastScore").css("color", "#5cb85c");
+                $("#player1LastScore").css("color", "#777");
+			}
+			
+			player2Score = parseInt(player2Score + changeByValue);
+			if (player2Score < 1) {
+				player1Score = player1Score + Math.abs(player2Score);
+				player2Score = 0;
+			}
+					
+			showScores();
+		}
+		</script>
+	</body>
+</html>
