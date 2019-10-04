@@ -136,10 +136,28 @@
 						</table>
 					</div>
 			</div>
-			<div class="row">
-				<br>
-				<img src="http://www.billiardworld.com/snooker.gif">
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#snookerModal">
+				Snooker Table Layout
+			</button>
+			<div class="modal fade" id="snookerModal" tabindex="-1" role="dialog" aria-labelleday="snookerModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title" id="snookerModalLabel">Snooker Table Layout</h4>
+						</div>
+						<div class="modal-body">
+							<img src="../img/snooker.jpg" alt="Snooker Table">
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
 			</div>
+			<!--<div class="row">
+				<br>
+				<img src="../img/snooker.jpg">
+			</div> -->
 		</center>
 		</div>
 		
@@ -232,6 +250,12 @@
 					
 			showScores();
 		}
+
+		$(document).ready(function(){
+			$("#snookerModal").click(function(){
+				<!-- $("myModal").modal(); -->
+			});
+		});
 		</script>
 	</body>
 </html>
