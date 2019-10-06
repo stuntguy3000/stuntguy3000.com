@@ -8,17 +8,23 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 		
 		<style>
-		score {
-			font-size: 700%;
-		}
-		
-		lastScore {
-			font-size: 500%;
-		}
-		
-		name {
-			font-size: 400%;
-		}
+			.player1div {
+				padding-left: 0px;
+			}
+			.player2div{
+				padding-right: 0px;
+			}
+			score {
+				font-size: 700%;
+			}
+
+			lastScore {
+				font-size: 500%;
+			}
+
+			name {
+				font-size: 400%;
+			}
 		</style>
 		
 		<script>
@@ -45,11 +51,10 @@
 			<h1>Snooker Scoreboard</h1>
 			<hr>
 			<div class="row">
-					<div class="col-md-6">
+					<div class="col-md-6 player1div">
 						<name><b><div id="player1Name"></div></b></name><br>
 						<score id="player1Score">0</score>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<lastScore style="color: #777777" id="player1LastScore">+0</lastScore><br>
+						<lastScore style="color: #777777" id="player1LastScore">0</lastScore><br>
 						<hr>
 						<table border="0" class="table well" style="table-layout: fixed; width: 100%;">
 						  <tbody>
@@ -90,11 +95,10 @@
 						  </tbody>
 						</table>
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-6 player2div">
 						<name><b><div id="player2Name"></div></b></name><br>
 						<score id="player2Score">0</score>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<lastScore style="color: #777777" id="player2LastScore">+0</lastScore><br>
+						<lastScore style="color: #777777" id="player2LastScore">0</lastScore><br>
 						<hr>
 						<table border="0" class="table well" style="table-layout: fixed; width: 100%;">
 						  <tbody>
@@ -135,6 +139,8 @@
 						  </tbody>
 						</table>
 					</div>
+				<button type="button" class="btn btn-warning btn-lg btn-block" href="#" role="button" onClick="resetPlayersScores()">Reset</button>
+				<br>
 			</div>
 			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#snookerModal">
 				Snooker Table Layout
@@ -154,10 +160,6 @@
 					</div>
 				</div>
 			</div>
-			<!--<div class="row">
-				<br>
-				<img src="../img/snooker.jpg">
-			</div> -->
 		</center>
 		</div>
 		
@@ -253,7 +255,6 @@
 
 		$(document).ready(function(){
 			$("#snookerModal").click(function(){
-				<!-- $("myModal").modal(); -->
 			});
 		});
 		</script>
