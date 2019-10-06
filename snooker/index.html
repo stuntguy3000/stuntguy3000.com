@@ -8,6 +8,13 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 		
 		<style>
+			.btn_reset {
+				margin-bottom: 20;
+				margin-top: 20;
+				padding-left: 100;
+				padding-right: 100;
+				width: 1140px;
+			}
 		score {
 			font-size: 700%;
 		}
@@ -135,6 +142,7 @@
 						  </tbody>
 						</table>
 					</div>
+				<button type="button" class="btn_reset btn-lg btn-block" href="#" role="button" onClick="resetPlayersScores()">Reset</button>
 			</div>
 			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#snookerModal">
 				Snooker Table Layout
@@ -206,7 +214,7 @@
 			
 			$('#myModal').modal('toggle');
 		}
-		
+
 		function showScores() {
 			$("#player1Score").text(player1Score);
 			$("#player2Score").text(player2Score);
@@ -249,6 +257,17 @@
 			}
 					
 			showScores();
+		}
+
+		function resetPlayersScores() {
+			player1Score = 0;
+			player2Score = 0;
+			$("#player1Score").text(player1Score);
+			$("#player2Score").text(player2Score);
+			$("#player1LastScore").text(player1Score);
+			$("#player1LastScore").css("color", "#777");
+			$("#player2LastScore").text(player2Score);
+			$("#player2LastScore").css("color", "#777");
 		}
 
 		$(document).ready(function(){
