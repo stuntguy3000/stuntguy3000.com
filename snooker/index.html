@@ -47,14 +47,15 @@
 	</head>
 	<body>
 		<div class="container">
-		<center>
+		<div style="text-align: center;">
 			<h1>Snooker Scoreboard</h1>
 			<hr>
 			<div class="row">
 					<div class="col-md-6 player1div">
 						<name><b><div id="player1Name"></div></b></name><br>
 						<score id="player1Score">0</score>
-						<lastScore style="color: #777777" id="player1LastScore">0</lastScore><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<lastScore style="color: #777777" id="player1LastScore"></lastScore><br>
 						<hr>
 						<table border="0" class="table well" style="table-layout: fixed; width: 100%;">
 						  <tbody>
@@ -98,7 +99,8 @@
 					<div class="col-md-6 player2div">
 						<name><b><div id="player2Name"></div></b></name><br>
 						<score id="player2Score">0</score>
-						<lastScore style="color: #777777" id="player2LastScore">0</lastScore><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<lastScore style="color: #777777" id="player2LastScore"></lastScore><br>
 						<hr>
 						<table border="0" class="table well" style="table-layout: fixed; width: 100%;">
 						  <tbody>
@@ -160,7 +162,7 @@
 					</div>
 				</div>
 			</div>
-		</center>
+		</div>
 		</div>
 		
 		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -251,6 +253,17 @@
 			}
 					
 			showScores();
+		}
+
+		function resetPlayersScores() {
+			player1Score = 0;
+			player2Score = 0;
+			$("#player1Score").text(player1Score);
+			$("#player2Score").text(player2Score);
+			$("#player1LastScore").text("");
+			$("#player1LastScore").css("color", "#777");
+			$("#player2LastScore").text("");
+			$("#player2LastScore").css("color", "#777");
 		}
 
 		$(document).ready(function(){
