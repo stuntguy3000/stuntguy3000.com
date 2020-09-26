@@ -9,4 +9,8 @@ function addScore(colour) {
     element.innerHTML = score + 1;
 
     console.log("New score: " + element.innerHTML);
+
+    // Play sound effect
+    var audio = new Audio('ding.mp3');
+    audio.play();
 }
