@@ -30,7 +30,8 @@ div.quadrupool-player-score {
     justify-content: center;
     align-items: center;
     height: 100%;
-
+	
+	font-size: 300px;
     font-size: 15vw;
 }
 
