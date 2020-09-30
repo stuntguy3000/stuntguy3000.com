@@ -31,7 +31,6 @@ div.quadrupool-player-score {
     align-items: center;
     height: 100%;
 	
-	font-size: 300px;
     font-size: 15vw;
 }
 
@@ -50,7 +49,7 @@ div.quadrupool-bluered-player {
 	background: linear-gradient(90deg, rgba(173,216,230,1) 30%, rgba(240,128,128,1) 70%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#add8e6",endColorstr="#f08080",GradientType=1);
 	
-	min-height: 100%;
+	min-height: 50%;
     min-width: 100%;
 }
 
