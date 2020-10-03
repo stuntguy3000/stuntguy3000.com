@@ -20,7 +20,7 @@
 			result = true;
 		} else {
 			try {
-				result = ( color != $script.css('color', 'rgba(0, 0, 0, 0.5)').css('color') );
+				result = ( color !== $script.css('color', 'rgba(0, 0, 0, 0.5)').css('color') );
 				$script.css('color', color);
 			} catch (e) {
 			}
