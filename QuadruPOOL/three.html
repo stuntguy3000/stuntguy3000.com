@@ -9,16 +9,42 @@
     </head>
     <body>
         <!-- Content -->
-        <div class="quadrupool-player-grid">
+        <div class="quadrupool-grid">
             <div class="quadrupool-bluered-player" onclick="addScore('bluered')">
                 <div class="quadrupool-player-score" id="bluered-score">0</div>
             </div>
             <div class="quadrupool-green-player" onclick="addScore('green')">
                 <div class="quadrupool-player-score" id="green-score">0</div>
             </div>
-            <div class="quadrupool-yellow-player" onclick="addScore('yellow')">
-                <div class="quadrupool-player-score" id="yellow-score">0</div>
+            <div class="quadrupool-orange-player" onclick="addScore('orange')">
+                <div class="quadrupool-player-score" id="orange-score">0</div>
             </div>
+
+            <!-- Score Selector -->
+            <!-- Player Selector -->
+            <div class="quadrupool-score-selector-button quadrupool-score-selector-button-player quadrupool-bluered-player" onclick="selectPlayer('bluered')"></div>
+            <div class="quadrupool-score-selector-button quadrupool-score-selector-button-player quadrupool-green-player" onclick="selectPlayer('green')"></div>
+            <div class="quadrupool-score-selector-button quadrupool-score-selector-button-player quadrupool-orange-player" onclick="selectPlayer('orange')"></div>
+            <div class="quadrupool-score-selector-button quadrupool-score-selector-button-spacer"></div>
+
+            <div class="quadrupool-score-selector-button quadrupool-score-selector-button-spacer"></div>
+
+            <!-- Ball Selector -->
+            <div id="ball-1" class="quadrupool-score-selector-button quadrupool-score-selector-button-score quadrupool-score-selector-button-disabled" onclick="addScore(null, 1)" style="background-color: yellow">1</div>
+            <div id="ball-2" class="quadrupool-score-selector-button quadrupool-score-selector-button-score quadrupool-score-selector-button-disabled" onclick="addScore(null, 2)" style="background-color: blue">2</div>
+            <div id="ball-3" class="quadrupool-score-selector-button quadrupool-score-selector-button-score quadrupool-score-selector-button-disabled" onclick="addScore(null, 3)" style="background-color: red">3</div>
+            <div id="ball-4" class="quadrupool-score-selector-button quadrupool-score-selector-button-score quadrupool-score-selector-button-disabled" onclick="addScore(null, 4)" style="background-color: purple">4</div>
+            <div id="ball-5" class="quadrupool-score-selector-button quadrupool-score-selector-button-score quadrupool-score-selector-button-disabled" onclick="addScore(null, 5)" style="background-color: orange">5</div>
+            <div id="ball-6" class="quadrupool-score-selector-button quadrupool-score-selector-button-score quadrupool-score-selector-button-disabled" onclick="addScore(null, 6)" style="background-color: green">6</div>
+            <div id="ball-7" class="quadrupool-score-selector-button quadrupool-score-selector-button-score quadrupool-score-selector-button-disabled" onclick="addScore(null, 7)" style="background-color: saddlebrown">7</div>
+            <div id="ball-8" class="quadrupool-score-selector-button quadrupool-score-selector-button-score quadrupool-score-selector-button-disabled" onclick="addScore(null, 8)" style="background-color: black">8</div>
+            <div id="ball-9" class="quadrupool-score-selector-button quadrupool-score-selector-button-score quadrupool-score-selector-button-disabled" onclick="addScore(null, 9)" style="background-color: yellow">9</div>
+            <div id="ball-10" class="quadrupool-score-selector-button quadrupool-score-selector-button-score quadrupool-score-selector-button-disabled" onclick="addScore(null, 10)" style="background-color: blue">10</div>
+            <div id="ball-11" class="quadrupool-score-selector-button quadrupool-score-selector-button-score quadrupool-score-selector-button-disabled" onclick="addScore(null, 11)" style="background-color: red">11</div>
+            <div id="ball-12" class="quadrupool-score-selector-button quadrupool-score-selector-button-score quadrupool-score-selector-button-disabled" onclick="addScore(null, 12)" style="background-color: purple">12</div>
+            <div id="ball-13" class="quadrupool-score-selector-button quadrupool-score-selector-button-score quadrupool-score-selector-button-disabled" onclick="addScore(null, 13)" style="background-color: orange">13</div>
+            <div id="ball-14" class="quadrupool-score-selector-button quadrupool-score-selector-button-score quadrupool-score-selector-button-disabled" onclick="addScore(null, 14)" style="background-color: green">14</div>
+            <div id="ball-15" class="quadrupool-score-selector-button quadrupool-score-selector-button-score quadrupool-score-selector-button-disabled" onclick="addScore(null, 15)" style="background-color: saddlebrown">15</div>
         </div>
 
         <script src="script.js"></script>

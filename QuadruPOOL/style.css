@@ -13,14 +13,14 @@ html,body {
     -khtml-user-select: none; /* Konqueror HTML */
     -moz-user-select: none; /* Old versions of Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
+/* Player Score Squares */
 div.quadrupool-blue-player,
 div.quadrupool-red-player,
 div.quadrupool-green-player,
-div.quadrupool-yellow-player {
+div.quadrupool-orange-player {
     min-height: 50%;
     min-width: 50%;
 }
@@ -29,18 +29,12 @@ div.quadrupool-player-score {
     display: flex;
     justify-content: center;
     align-items: center;
+
     height: 100%;
-	
 	font-size: 200px;
     font-size: 15vw;
-}
 
-div.quadrupool-player-grid {
-    display: flex;
-    flex-flow: row wrap;
-
-    min-height: 100%;
-    min-width: 100%;
+    color: black;
 }
 
 div.quadrupool-bluered-player {
@@ -50,34 +44,69 @@ div.quadrupool-bluered-player {
 	background: linear-gradient(90deg, rgba(173,216,230,1) 30%, rgba(240,128,128,1) 70%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#add8e6",endColorstr="#f08080",GradientType=1);
 	
-	min-height: 50%;
+	min-height: 40%;
     min-width: 100%;
 }
 
-div.quadrupool-greenyellow-player {
+div.quadrupool-greenorange-player {
 	background: rgb(144,238,144);
 	background: -moz-linear-gradient(90deg, rgba(144,238,144,1) 30%, rgba(244,164,96,1) 70%);
 	background: -webkit-linear-gradient(90deg, rgba(144,238,144,1) 30%, rgba(244,164,96,1) 70%);
 	background: linear-gradient(90deg, rgba(144,238,144,1) 30%, rgba(244,164,96,1) 70%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#90ee90",endColorstr="#f4a460",GradientType=1);
 	
-	min-height: 50%;
+	min-height: 40%;
     min-width: 100%;
 }
 
-div.quadrupool-blue-player {
-    background-color: lightblue;
+.quadrupool-blue-player { background-color: lightblue; color: lightblue; }
+.quadrupool-red-player { background-color: lightcoral; color: lightcoral; }
+.quadrupool-green-player { background-color: lightgreen; color: lightgreen; }
+.quadrupool-orange-player { background-color: sandybrown; color: sandybrown; }
+
+div.quadrupool-spacer {
+    min-width: 100%;
+    min-height: 1%;
+
+    display: flex;
+    background: gray;
 }
 
-div.quadrupool-red-player {
-    background-color: lightcoral;
+/* Score Selector */
+div.quadrupool-score-selector-button {
+    min-width: 5%;
+    max-width: 5%;
+    min-height: 8%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
 }
 
-div.quadrupool-green-player {
-    background-color: lightgreen;
+div.quadrupool-score-selector-button-disabled {
+    background: none !important;
+    filter: none !important;
+    background-color: lightgray !important;
+    color: lightgray !important;
+
+
 }
 
-div.quadrupool-yellow-player {
-    background-color: sandybrown;
+div.quadrupool-score-selector-button-spacer {
+    background-color: lightgray;
+    color: lightgray;
 }
 
+div.quadrupool-score-selector-button:focus {
+    outline: none;
+}
+
+/* Page Layout */
+div.quadrupool-grid {
+    display: flex;
+    flex-flow: row wrap;
+    min-height: 100%;
+    min-width: 100%;
+}
