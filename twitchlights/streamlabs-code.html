@@ -32,7 +32,7 @@
 
         <script>
             var oauthHash = location.hash.substr(1);
-            var accessToken = oauthHash.substr(oauthHash.indexOf('access_token=')).split('&')[0].split('=')[1];
+            var accessToken = oauthHash.substr(oauthHash.indexOf('code=')).split('&')[0].split('=')[1];
 
             document.getElementById("code").innerHTML = accessToken
         </script>
