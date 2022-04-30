@@ -85,11 +85,13 @@
                 <hr>
                 <!-- Assumptions -->
                 <div>
-                    <h1>Assumptions</h1>
+                    <h1>Assumptions/Rules</h1>
 
                     <ul>
+                        <li>The Wall Length must be a multiple of 2, wall heights do not (and can have decimal places).</li>
                         <li>When dealing with slopes, if the slope height at the <strong>start or end</strong> of a wall segment <strong>exceeds 100mm</strong>, a sleeper is required.</li>
                         <li>This tool is accurate and mathematically sound.</li>
+                        <li>The total area refers to the <strong>total area of sleepers</strong>, which may be slightly larger than the total area of the defined wall (due to sleeper requirements).</li>
                     </ul>
                 </div>
             </div>
@@ -108,11 +110,11 @@
                             <p>
                                 <strong>Total Segments: </strong><span id="calculation-segments">420</span><br>
                                 <strong>Total Sleepers Required: </strong><span id="calculation-sleepers">420</span><br>
-                                <strong>Total Area: </strong><span id="calculation-area">420</span>m²
+                                <strong>Total Area of Sleepers: </strong><span id="calculation-area">420</span>m²
                             </p>
 
                             <p>
-                                <strong>Sleeper Cost: </strong>$<span id="calculation-sleepercost">420</span><br>
+                                <strong>Wall Cost ($425 per Square Metre): </strong>$<span id="calculation-sleepercost">420</span><br>
                                 <strong>Penalty Cost Percentage: </strong><span id="calculation-penaltycostpercent">420</span>%<br>
                                 <strong>Penalty Cost: </strong>$<span id="calculation-penaltycost">420</span>
                             </p>
