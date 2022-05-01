@@ -166,6 +166,6 @@ $("#buttonCalculate").on("click", function() {
     calculationTotalCost.text(totalCost);
 
     dataWallLength.text(wallLengthMM / 1000);
-    dataWallStartHeight.text(wallStartHeightMM / 100);
-    dataWallEndHeight.text(wallEndHeightMM / 100);
+    dataWallStartHeight.text(wallStartHeightMM / 1000);
+    dataWallEndHeight.text(wallEndHeightMM / 1000);
 });
