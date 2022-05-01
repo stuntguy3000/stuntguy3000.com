@@ -58,12 +58,18 @@ $("#buttonCalculate").on("click", function() {
     // Does Wall Height have an angle?
     if (wallStartHeightMM === wallEndHeightMM) {
         // No
-        sleepers = segments * Math.floor(wallStartHeightMM / sleeperHeightMM)
+        // Calculate sleepers
+        let sleepersRequired = Math.floor(wallStartHeightMM / 200);
+        let sleepersRequiredRemainderMM = wallEndHeightMM % 200;
+        console.log(sleepersRequired)
+        console.log(sleepersRequiredRemainderMM)
 
-        if (wallStartHeightMM === 200) {
-            // Because Math
-            sleepers = 1;
+        // Implement Half Slab Rules
+        if (sleepersRequiredRemainderMM > 100) {
+            sleepersRequired++;
         }
+
+        sleepers = sleepersRequired;
 
         console.log("wallStartHeightMM: " + wallStartHeightMM);
         console.log("sleeperHeightMM: " + sleeperHeightMM);
