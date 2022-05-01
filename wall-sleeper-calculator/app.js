@@ -74,7 +74,7 @@ $("#buttonCalculate").on("click", function() {
             sleepersRequired++;
         }
 
-        sleepers = sleepersRequired;
+        sleepers = sleepersRequired * segments;
 
         console.log("wallStartHeightMM: " + wallStartHeightMM);
         console.log("sleeperHeightMM: " + sleeperHeightMM);
