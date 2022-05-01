@@ -58,7 +58,17 @@ $("#buttonCalculate").on("click", function() {
     // Does Wall Height have an angle?
     if (wallStartHeightMM === wallEndHeightMM) {
         // No
-        sleepers = segments * (wallStartHeightMM / sleeperHeightMM)
+        sleepers = segments * Math.floor(wallStartHeightMM / sleeperHeightMM)
+
+        if (wallStartHeightMM === 200) {
+            // Because Math
+            sleepers = 1;
+        }
+
+        console.log("wallStartHeightMM: " + wallStartHeightMM);
+        console.log("sleeperHeightMM: " + sleeperHeightMM);
+        console.log("segments: " + segments);
+        console.log("sleepers: " + sleepers);
     } else {
         // Yes
         let wallHeightDifferenceMM = Math.max(wallStartHeightMM, wallEndHeightMM) - Math.min(wallStartHeightMM, wallEndHeightMM)
@@ -106,7 +116,7 @@ $("#buttonCalculate").on("click", function() {
     // Step 3: Calculate Area
     // Formula = Sleepers * Area of Sleeper
     console.log(sleepers)
-    totalArea = (sleepers * (0.2 * 2)).toFixed(0)
+    totalArea = (sleepers * (0.2 * 2)).toFixed(2)
     calculationArea.text(totalArea);
 
     // Step 4: Calculate Costs
