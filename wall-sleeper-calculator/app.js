@@ -28,6 +28,11 @@ $("#buttonCalculate").on("click", function() {
     const calculationPenaltyCost = $("#calculation-penaltycost")
     const calculationTotalCost = $("#calculation-totalcost")
 
+    // Wall Data
+    const dataWallLength = $("#data-wallLength");
+    const dataWallStartHeight = $("#data-wallStartHeight");
+    const dataWallEndHeight = $("#data-wallEndHeight");
+
     let sleepers = 0;
     let segments = 0;
     let totalArea = 0;
@@ -159,4 +164,8 @@ $("#buttonCalculate").on("click", function() {
 
     calculationPenaltyCost.text(totalPenaltyCost);
     calculationTotalCost.text(totalCost);
+
+    dataWallLength.text(wallLengthMM / 1000);
+    dataWallStartHeight.text(wallStartHeightMM / 100);
+    dataWallEndHeight.text(wallEndHeightMM / 100);
 });
